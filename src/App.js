@@ -4,8 +4,6 @@ import UserForm from './components/UserForm';
 
 import MedicineDetails from './components/MedicineDetails';
 
-import Cart from './components/Cart';
-
 import MedicineContextProvider from './components/MedicineContextProvider';
 
 import './App.css';
@@ -17,7 +15,6 @@ function App() {
         <Header />
         <UserForm />
         <MedicineDetails />
-        <Cart/>
     </MedicineContextProvider>
     </div>
   );
