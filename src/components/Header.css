@@ -28,6 +28,20 @@ background-color: rgb(61, 61, 250);
 color:white;
 }
 
+.image-container {
+        width: 100%;
+        height: 40rem;
+        z-index: 0;
+        overflow: hidden;
+}
+
+.image-container img {
+    width: 110%;
+        height: 50%;
+        object-fit: cover;
+        transform: rotateZ(-3deg) translateY(-3rem) translateX(-4rem)
+}
+
 /* Media queries for responsive design */
 
 /* Small devices (phones) */
@@ -40,6 +54,19 @@ color:white;
     .header__cart-button {
         margin-top: 10px;
     }
+        .image-container {
+            width: 100%;
+            height: 40rem;
+            z-index: 0;
+            overflow: hidden;
+        }
+    
+        .image-container img {
+            width: 180%;
+            height: 50%;
+            object-fit: cover;
+            transform: rotateZ(-3deg) translateY(-3rem) translateX(-4rem)
+        }
 }
 
 /* Medium devices (tablets) */
@@ -51,6 +78,19 @@ color:white;
     .header__cart-button {
         margin-left: 10px;
     }
+        .image-container {
+            width: 100%;
+            height: 40rem;
+            z-index: 0;
+            overflow: hidden;
+        }
+    
+        .image-container img {
+            width: 140%;
+            height: 50%;
+            object-fit: cover;
+            transform: rotateZ(-3deg) translateY(-3rem) translateX(-4rem)
+        }
 }
 
 /* Large devices (laptops, desktops) */
@@ -62,4 +102,17 @@ color:white;
     .header__cart-button {
         margin-left: 10px;
     }
+        .image-container {
+            width: 100%;
+            height: 40rem;
+            z-index: 0;
+            overflow: hidden;
+        }
+    
+        .image-container img {
+            width: 120%;
+            height: 50%;
+            object-fit: cover;
+            transform: rotateZ(-3deg) translateY(-3rem) translateX(-4rem)
+        }
 }

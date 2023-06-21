@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { MedicineContext } from './MedicineContextProvider';
 import Cart from './Cart';
+import MyImg from "./assets/pills-package.jpg"
 import "./Header.css";
 
 const Header = () => {
@@ -15,6 +16,7 @@ const Header = () => {
       {/* <div className={`cart-wrapper ${isCartOpen ? 'open' : ''}`}> 
       </div> */}
         </header>
+        <div className='image-container'><img src ={MyImg} alt='Pills Image'/></div>
         {isCartOpen && <Cart />}
   </div>
     
