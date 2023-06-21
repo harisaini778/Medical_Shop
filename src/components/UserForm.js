@@ -1,5 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { MedicineContext } from './MedicineContextProvider';
+import './UserForm.css';
 
 const UserForm = () => {
   const { addMedicine } = useContext(MedicineContext);
@@ -27,7 +28,7 @@ const UserForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="form" onSubmit={handleSubmit}>
       <input
         type="text"
         name="name"
@@ -35,6 +36,7 @@ const UserForm = () => {
         onChange={handleChange}
         placeholder="Medicine Name"
         required
+        className="form__input"
       />
       <input
         type="text"
@@ -43,6 +45,7 @@ const UserForm = () => {
         onChange={handleChange}
         placeholder="Medicine Description"
         required
+        className="form__input"
       />
       <input
         type="number"
@@ -51,6 +54,7 @@ const UserForm = () => {
         onChange={handleChange}
         placeholder="Medicine Price"
         required
+        className="form__input"
       />
       <input
         type="number"
@@ -59,8 +63,9 @@ const UserForm = () => {
         onChange={handleChange}
         placeholder="Medicine Quantity"
         required
+        className="form__input"
       />
-      <button type="submit">Submit</button>
+      <button type="submit" className="form__button">Submit</button>
     </form>
   );
 };
