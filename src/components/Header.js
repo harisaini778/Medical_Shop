@@ -6,14 +6,18 @@ import "./Header.css";
 const Header = () => {
   const { isCartOpen, toggleCart } = useContext(MedicineContext);
 
-  return (
-    <header className="header">
-      <h1 className="header__title">Medicine Shop</h1>
+    return (<div>
+      <header className="header">
+      <h1 className="header__title">Salific Pharmaceuticals</h1>
       <button className="header__cart-button" onClick={toggleCart}>
         {isCartOpen ? 'Close Cart' : 'Open Cart'}
       </button>
-      {isCartOpen && <Cart />}
-    </header>
+      {/* <div className={`cart-wrapper ${isCartOpen ? 'open' : ''}`}> 
+      </div> */}
+        </header>
+        {isCartOpen && <Cart />}
+  </div>
+    
   );
 };
 
